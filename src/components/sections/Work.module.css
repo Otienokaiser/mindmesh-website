@@ -1,0 +1,20 @@
+.grid { display: grid; gap: 1.25rem; margin-top: clamp(2.5rem, 5vw, 4rem); }
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s; }
+.card:hover { border-color: var(--line-strong); box-shadow: var(--shadow-md); }
+.feature { display: grid; }
+.shot { padding: 1.25rem 1.25rem 0; background: var(--brand-soft); border-bottom: 1px solid var(--line); overflow: hidden; }
+.shot > figure > div { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: 0; box-shadow: none; }
+.body { padding: 1.75rem; display: grid; gap: 0.6rem; align-content: start; }
+.body h3, .invite h3 { font-size: var(--step-2); }
+.body p:not(.cat):not(.ctx), .invite p:not(.cat) { color: var(--muted); }
+.cat { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--brand-ink); }
+.ctx { font-size: 0.875rem; color: var(--muted); }
+.invite { padding: 1.75rem; display: grid; gap: 0.9rem; align-content: start; background: transparent; border-style: dashed; border-color: var(--line-strong); }
+.invite:hover { box-shadow: none; }
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: 1.5fr 1fr; align-items: stretch; }
+  .shot { padding: 2rem 2rem 0; }
+  .body { padding: 2rem 2.25rem 2.25rem; }
+  .invite { padding: 2.25rem; align-content: center; }
+}

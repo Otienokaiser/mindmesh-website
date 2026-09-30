@@ -1,0 +1,12 @@
+.grid { display: grid; gap: 3.5rem; }
+.aside h2 { font-size: var(--step-1); margin-bottom: 1.25rem; }
+.aside > ul { display: grid; gap: 1.25rem; }
+.aside > ul li { display: flex; gap: 0.9rem; align-items: flex-start; }
+.aside > ul svg { color: var(--brand-ink); margin-top: 0.15rem; flex: none; }
+.aside b { display: block; color: var(--ink); font-size: 0.875rem; }
+.aside a, .aside span { color: var(--muted); overflow-wrap: anywhere; }
+.aside a { text-decoration: underline; text-underline-offset: 3px; }
+.info { margin-top: 2.5rem; padding: 1.5rem; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.info h3 { font-size: 1rem; margin-bottom: 0.75rem; }
+.info ol { list-style: decimal; padding-left: 1.1rem; display: grid; gap: 0.5rem; color: var(--muted); font-size: 0.9375rem; }
+@media (min-width: 960px) { .grid { grid-template-columns: 1.3fr 0.7fr; gap: 6rem; } }

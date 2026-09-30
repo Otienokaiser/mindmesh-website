@@ -1,0 +1,19 @@
+.hero {
+  position: relative; overflow: hidden;
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(3.5rem, 7vw, 6rem);
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 26px 26px;
+  background-position: center top;
+}
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #fff 100%); pointer-events: none; }
+.grid { position: relative; z-index: 1; display: grid; gap: 3rem; align-items: center; }
+.copy h1 { font-size: clamp(2.375rem, 1.3rem + 3.6vw, 4rem); margin-top: 1.25rem; letter-spacing: -0.035em; }
+.copy :global(.lead) { margin-top: 1.5rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.25rem; }
+.actions > * { flex: 1 1 100%; }
+.visual { padding-inline: 0.5rem; }
+
+@media (min-width: 480px) { .actions > * { flex: 0 0 auto; } }
+@media (min-width: 960px) {
+  .grid { grid-template-columns: 1.1fr 0.9fr; gap: 4rem; }
+}

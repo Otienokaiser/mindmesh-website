@@ -1,0 +1,9 @@
+.shot { max-width: 920px; margin-inline: auto; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 2.5rem; }
+.grid { display: grid; gap: 2rem; margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.grid li { display: grid; gap: 0.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line-strong); align-content: start; }
+.grid h3 { font-size: var(--step-1); }
+.grid p { color: var(--muted); }
+.tick { color: var(--brand-ink); }
+@media (min-width: 720px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 3rem; } }
+@media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }

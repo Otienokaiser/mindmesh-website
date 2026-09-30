@@ -1,0 +1,13 @@
+.grid { display: grid; gap: 3rem; }
+.list { display: grid; gap: 2rem; }
+.list li { display: grid; grid-template-columns: auto 1fr; gap: 1rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
+.list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.icon { color: var(--brand-ink); margin-top: 0.2rem; }
+.list h3 { font-size: var(--step-1); }
+.list p { color: var(--muted); margin-top: 0.35rem; max-width: 52ch; }
+
+@media (min-width: 960px) {
+  .grid { grid-template-columns: 0.8fr 1.2fr; gap: 5rem; align-items: start; }
+  .list { grid-template-columns: 1fr 1fr; gap: 2.5rem 3rem; }
+  .list li { border-bottom: 0; padding-bottom: 0; grid-template-columns: 1fr; }
+}

@@ -1,0 +1,10 @@
+.strip { border-block: 1px solid var(--line); background: var(--bg-soft); }
+.inner { display: grid; gap: 1.25rem; padding-block: 1.75rem; align-items: center; }
+.statement { color: var(--ink); font-weight: 550; letter-spacing: -0.015em; max-width: 46ch; }
+.list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.list li { font-size: 0.8125rem; font-weight: 550; color: var(--muted); border: 1px solid var(--line-strong); background: #fff; padding: 0.35rem 0.8rem; border-radius: 99px; }
+
+@media (min-width: 960px) {
+  .inner { grid-template-columns: 1fr auto; gap: 3rem; }
+  .list { justify-content: flex-end; max-width: 520px; }
+}

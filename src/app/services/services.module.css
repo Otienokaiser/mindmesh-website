@@ -1,0 +1,16 @@
+.list { border-top: 1px solid var(--line); }
+.row { display: grid; gap: 1.25rem; padding-block: 2.5rem; border-bottom: 1px solid var(--line); scroll-margin-top: calc(var(--header-h) + 16px); }
+.head { display: flex; align-items: center; gap: 1rem; }
+.head h2 { font-size: var(--step-2); }
+.icon { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border-radius: 10px; background: var(--brand-soft); color: var(--brand-ink); }
+.body { display: grid; gap: 1rem; color: var(--muted); max-width: 62ch; }
+.summary { color: var(--ink); font-size: var(--step-1); font-weight: 550; letter-spacing: -0.01em; }
+.points { display: grid; gap: 0.5rem; margin-top: 0.25rem; }
+.points li { display: flex; gap: 0.6rem; align-items: center; color: var(--text); font-size: 0.9375rem; }
+.points svg { color: var(--brand-ink); flex: none; }
+.more { margin-top: 3rem; }
+
+@media (min-width: 900px) {
+  .row { grid-template-columns: 0.8fr 1.2fr; gap: 4rem; padding-block: 3.25rem; }
+  .head { align-items: flex-start; }
+}

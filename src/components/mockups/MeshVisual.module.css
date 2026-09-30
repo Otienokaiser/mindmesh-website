@@ -1,0 +1,4 @@
+.wrap { margin: 0; width: 100%; max-width: 560px; margin-inline: auto; }
+.svg { width: 100%; height: auto; overflow: visible; }
+.flow { stroke-dasharray: 4 7; animation: dash 14s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: -110; } }

@@ -1,0 +1,8 @@
+.story { display: grid; gap: 3.5rem; }
+.prose { display: grid; gap: 1.5rem; font-size: var(--step-1); color: var(--muted); max-width: 62ch; }
+.prose p:first-child { color: var(--ink); font-size: var(--step-2); letter-spacing: -0.02em; line-height: 1.35; font-weight: 550; }
+.beliefs { margin: 0; display: grid; gap: 1.75rem; align-content: start; }
+.beliefs div { padding-top: 1.25rem; border-top: 1px solid var(--line-strong); }
+.beliefs dt { font: 600 0.75rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--brand-ink); }
+.beliefs dd { margin: 0.5rem 0 0; color: var(--text); }
+@media (min-width: 960px) { .story { grid-template-columns: 1.4fr 1fr; gap: 6rem; } }
